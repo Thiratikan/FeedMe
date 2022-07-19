@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import item from "./data";
+import choices from "./data";
 import Catagories from "./Catagories";
 import Item from "./Item";
 
 function App() {
-  const [items, setItems] = useState(item);
+  const [itemChoice, setItems] = useState(choices);
   const [catagories, setCategories] = useState([]);
 
   return (
@@ -14,7 +14,7 @@ function App() {
           <h1>FeedMe</h1>
         </div>
         <Catagories />
-        <Item />
+        <Item choices={itemChoice} />
       </section>
     </main>
   );
