@@ -13,4 +13,11 @@ const choice = [
     img: "../public/images/WhiskeySour.webp",
     desc: "whiskey, sweet&sour, syrub, lemon, egg white, orange , cherry",
   },
+  {
+    id: 3,
+    title: "Ian",
+    catagory: "Ian",
+    img: "../public/images/WhiskeySour.webp",
+    desc: "hi",
+  },
 ];
