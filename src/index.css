@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Rubik&display=swap");
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.logo {
+  height: 40%;
+  width: 40%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+Button.filter-btn {
+  font-size: 150%;
+  font-weight: bold;
+  color: rgb(224, 131, 174);
+  font-family: "Indie Flower", cursive;
+}

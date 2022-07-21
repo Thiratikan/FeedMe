@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import choices from "./data";
 import Catagories from "./Catagories";
 import Item from "./Item";
+import "./index.css";
 
 const allCategories = choices.map((choice) => choice.catagory);
 
@@ -24,7 +25,7 @@ function App() {
     <main>
       <section className="choice section">
         <div className="title">
-          <h1>FeedMe</h1>
+          <img src="./images/FeedMe.png" alt="feedme" class="logo" />
         </div>
         <Catagories filterItems={filterItems} />
         <Item choices={itemChoice} />
