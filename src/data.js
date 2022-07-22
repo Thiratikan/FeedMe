@@ -20,6 +20,13 @@ const choices = [
     img: "./images/margarita.jpg",
     desc: "4 tequila, 4 sweet&sour, 2 triple sec, lime",
   },
+  {
+    id: 4,
+    title: "Fried Rice",
+    catagory: "food",
+    img: "./images/FriedRice.jpg",
+    desc: "Rice, meat, soy sauce",
+  },
 ];
 
 export default choices;

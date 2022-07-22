@@ -4,11 +4,14 @@ import Catagories from "./Catagories";
 import Item from "./Item";
 import "./index.css";
 
-const allCategories = choices.map((choice) => choice.catagory);
+const allCategories = [
+  "all",
+  ...new Set(choices.map((choice) => choice.catagory)),
+];
 
 function App() {
   const [itemChoice, setItems] = useState(choices);
-  const [catagories, setCategories] = useState([]);
+  const [catagories, setCategories] = useState([allCategories]);
 
   const filterItems = (catagory) => {
     if (catagory === "all") {
@@ -23,12 +26,15 @@ function App() {
 
   return (
     <main>
-      <section className="choice section">
+      <section className="choice-section">
         <div className="title">
           <img src="./images/FeedMe.png" alt="feedme" class="logo" />
         </div>
-        <Catagories filterItems={filterItems} />
-        <Item choices={itemChoice} />
+
+        <section className="body">
+          <Catagories catagories={catagories} filterItems={filterItems} />
+          <Item choices={itemChoice} />
+        </section>
       </section>
     </main>
   );

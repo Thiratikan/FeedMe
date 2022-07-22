@@ -1,29 +1,24 @@
 import * as React from "react";
-import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
 import "./index.css";
 
-const Catagories = ({ filterItems }) => {
+const Categories = ({ categories, filterItems }) => {
   return (
-    <Stack>
-      <div className="btn-container">
-        <Button
-          className="filter-btn"
-          color="secondary"
-          onClick={() => filterItems("all")}
-        >
-          all
-        </Button>
-        <Button
-          className="filter-btn"
-          color="secondary"
-          onClick={() => filterItems("drink")}
-        >
-          drink
-        </Button>
-      </div>
-    </Stack>
+    <div className="btn-container">
+      {categories.map((category, index) => {
+        return (
+          <Button
+            type="Button"
+            className="filter-btn"
+            key={index}
+            onClick={() => filterItems(category)}
+          >
+            {category}
+          </Button>
+        );
+      })}
+    </div>
   );
 };
 
-export default Catagories;
+export default Categories;
