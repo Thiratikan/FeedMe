@@ -1,76 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200;900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:900");
 
-*,
-::after,
-::before {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-.logo {
-  height: 40%;
-  width: 40%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.btn-container {
-  display: flex;
-  justify-content: center;
-  padding: 50px;
-}
-
-Button.filter-btn {
-  font-size: 200%;
-  font-weight: bold;
-  color: rgb(224, 131, 131);
-  font-family: "Acme", sans-serif;
-}
-.title {
   background-color: #272525;
 }
 
-.body {
-  color: aliceblue;
-  background-color: #272525;
-}
-
-.photo {
-  object-fit: cover;
-  height: 300px;
-  width: 70%;
-  border: 0.25rem solid var(--clr-gold);
-  border-radius: var(--radius);
-  display: block;
-}
-
-.item-choice {
-  display: grid;
-  gap: 1rem 2rem;
-  max-width: 25rem;
-}
-
-.section-center {
-  width: 90vw;
-  margin: 0 auto;
-  max-width: 1170px;
-  display: grid;
-  gap: 3rem 2rem;
-  justify-items: center;
-}
-
-.item-info header {
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 0.5px dotted var(--clr-grey-5);
-}
-.item-info h4 {
-  margin-bottom: 0.5rem;
-}
-
-.item-text {
-  margin-bottom: 0;
-  padding-top: 1rem;
-}
+/* Feed time page */

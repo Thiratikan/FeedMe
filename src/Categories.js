@@ -1,6 +1,5 @@
 import * as React from "react";
 import Button from "@mui/material/Button";
-import "./index.css";
 
 const Categories = ({ categories, filterItems }) => {
   return (
@@ -8,7 +7,7 @@ const Categories = ({ categories, filterItems }) => {
       {categories.map((category, index) => {
         return (
           <Button
-            type="Button"
+            type="button"
             className="filter-btn"
             key={index}
             onClick={() => filterItems(category)}
