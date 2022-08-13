@@ -2,17 +2,16 @@ import styled from "styled-components";
 
 export const BoxStyle = styled.div`
   text-align: center;
-  padding: 100px;
   background: rgba(0, 0, 0, 0.9);
   border-radius: 20px;
   border-width: 20px;
   border-color: red;
-  width: 40%;
-  height: 50%;
+  width: 1000px;
+  height: 500px;
   transition: fixed;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 200px;
+  margin-top: 150px;
   display: flex;
   flex-direction: column;
   button {
