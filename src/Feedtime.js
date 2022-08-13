@@ -4,11 +4,12 @@ import { StyledFeedTime, Div } from "./styles/Feedtime-styled";
 import { Button } from "./styles/Button-styled";
 import { BtnFeedMe } from "./styles/BTNfeedMe";
 import ModelBox from "./ModelBox";
+import Drink from "./Drink";
 
 function Feedtime() {
   const [isOpen, setIsOpen] = useState(false);
-
   let navigate = useNavigate();
+
   return (
     <>
       <StyledFeedTime>
@@ -74,8 +75,8 @@ function Feedtime() {
             Option
           </Button>
         </Div>
-        <ModelBox open={isOpen} onClose={() => setIsOpen(false)}></ModelBox>
       </StyledFeedTime>
+      <ModelBox open={isOpen} onClose={() => setIsOpen(false)}></ModelBox>
 
       <section>
         <nav>
