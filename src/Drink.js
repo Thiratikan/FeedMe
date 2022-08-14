@@ -3,16 +3,16 @@ import choices from "./data";
 import { MenuStyle } from "./styles/Menu-styled";
 
 function Drink() {
-  choices = [...Drink];
-  const [randomDrink, setRandomDrink] = useState("");
-  const getRandomDrink = () => {
-    const randomDrink = Math.floor(Math.random() * choices.length);
-    setRandomDrink(randomDrink);
+  const [randomDrink, setRandomDrink] = useState(0);
+  const getRandomDrink = (e) => {
+    const len = choices.lemgth;
+    setRandomDrink(Math.floor(Math.random() * len));
   };
 
   return (
     <MenuStyle>
-      <div id="category">{choices[randomDrink].category}</div>
+      <div key={randomDrink}>{choices[randomDrink].randomDrink}</div>
+      <div>{getRandomDrink}</div>
     </MenuStyle>
   );
 }
