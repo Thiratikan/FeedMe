@@ -4,10 +4,11 @@ import { StyledFeedTime, Div } from "./styles/Feedtime-styled";
 import { Button } from "./styles/Button-styled";
 import { BtnFeedMe } from "./styles/BTNfeedMe";
 import ModelBox from "./ModelBox";
-import Drink from "./Drink";
 
 function Feedtime() {
   const [isOpen, setIsOpen] = useState(false);
+  const [itemType, setItemType] = useState("");
+
   let navigate = useNavigate();
 
   return (
@@ -25,7 +26,14 @@ function Feedtime() {
                   <div className="dot"></div>
                   <div className="dot"></div>
                 </div>
-                <span onClick={() => setIsOpen(true)}>Feed Me!</span>
+                <span
+                  onClick={() => {
+                    setItemType("food");
+                    setIsOpen(true);
+                  }}
+                >
+                  Feed Me!
+                </span>
               </div>
             </div>
 
@@ -38,7 +46,14 @@ function Feedtime() {
                   <div className="dot"></div>
                   <div className="dot"></div>
                 </div>
-                <span onClick={() => setIsOpen(true)}>Feed Me!</span>
+                <span
+                  onClick={() => {
+                    setItemType("drink");
+                    setIsOpen(true);
+                  }}
+                >
+                  Feed Me!
+                </span>
               </div>
             </div>
 
@@ -76,7 +91,11 @@ function Feedtime() {
           </Button>
         </Div>
       </StyledFeedTime>
-      <ModelBox open={isOpen} onClose={() => setIsOpen(false)}></ModelBox>
+      <ModelBox
+        open={isOpen}
+        itemType={itemType}
+        onClose={() => setIsOpen(false)}
+      ></ModelBox>
 
       <section>
         <nav>

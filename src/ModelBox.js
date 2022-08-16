@@ -3,14 +3,14 @@ import { BoxStyle, OverlayStyle } from "./styles/ModelBox-styled";
 import Drink from "./Drink";
 import choices from "./data";
 
-function ModelBox({ open, children, onClose }) {
+function ModelBox({ open, children, onClose, itemType }) {
   if (!open) return null;
 
   return (
     <>
       <OverlayStyle>
         <BoxStyle>
-          <Drink />
+          <Drink itemType={itemType} />
           <button>FEED MORE</button>
           <button onClick={onClose}>Close</button>
           {children}
