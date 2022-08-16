@@ -1,61 +1,15 @@
-import React, { useEffect, useState } from "react";
 import choices from "./data";
 import { MenuStyle } from "./styles/Menu-styled";
 
-function Drink() {
-  const [randomDrink, setRandomDrink] = useState(0);
-  const getRandomDrink = (e) => {
-    const len = choices.lemgth;
-    setRandomDrink(Math.floor(Math.random() * len));
-  };
+function Drink(choices) {
+  const getRandomDrink = (min, max) => {
+    min = Math.ceil(0);
+    max = Math.floor(choices.length);
 
-  return (
-    <MenuStyle>
-      <div key={randomDrink}>{choices[randomDrink].randomDrink}</div>
-      <div>{getRandomDrink}</div>
-    </MenuStyle>
-  );
+    return Math.floor(Math.random() * (max - min) + min);
+  };
+  console.log(getRandomDrink(0, choices.length));
+  return <MenuStyle>{choices[getRandomDrink(0, choices.length)]}</MenuStyle>;
 }
 
-// function Drink() {
-//     const [title, setTitle] = useState(null)
-
-//     const [randomDrink, setRandomDrink] = useState(0);
-//   const getItem = async () => {
-//     const response = await fetch(choices);
-//     const data = await response.json();
-//     const menu = data.results[0]
-//     const {title, img, desc} = menu;
-//     const newItem = {title,img,desc}
-
-//     setRandomDrink(newItem)
-//   }
-
-//   useEffect (() => {
-//     getItem()
-//   }, [])
-//   return (
-//     <MenuStyle>
-//       <p>{title}</p>
-//       <p>{img}</p>
-//       <p>{desc}</p>
-
-//     </MenuStyle>
-//   );
-// }
-
 export default Drink;
-
-// function Drink() {
-//     const [randomDrink, setRandomDrink] = useState();
-//     const getRandomDrink = () => {
-//       const randomDrink = Math.floor(Math.random() * choices.length);
-//       setRandomDrink(randomDrink);
-//     };
-
-//     return (
-//       <MenuStyle>
-//         <div id="category">{choices[randomDrink].category}</div>
-//       </MenuStyle>
-//     );
-//   }
