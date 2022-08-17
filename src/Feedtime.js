@@ -66,7 +66,14 @@ function Feedtime() {
                   <div className="dot"></div>
                   <div className="dot"></div>
                 </div>
-                <span onClick={() => setIsOpen(true)}>Feed Me!</span>
+                <span
+                  onClick={() => {
+                    setItemType("dessert");
+                    setIsOpen(true);
+                  }}
+                >
+                  Feed Me!
+                </span>
               </div>
             </div>
           </BtnFeedMe>

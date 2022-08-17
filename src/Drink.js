@@ -1,4 +1,4 @@
-import choices from "./data";
+import Data from "./Data";
 import { MenuStyle } from "./styles/Menu-styled";
 
 function Drink({ itemType }) {
@@ -9,20 +9,30 @@ function Drink({ itemType }) {
     return Math.floor(Math.random() * (max - min) + min);
   };
 
-  const newChoicesArrayByType = choices.filter(
+  const mapMenu = Data.map((foodItem) => {
+    const { id, title, img, desc } = foodItem;
+    return (
+      <div key={id}>
+        <img src={img} alt={title} />
+        <h1>{title}</h1>
+        <h1>{desc}</h1>
+      </div>
+    );
+  });
+
+  const newChoicesArrayByType = Data.filter(
     (element) => element.category === itemType
   );
 
-  // choices[getRandomDrink(0, choices.length)]
-  // choices[1]
+  // Data[getRandomDrink(0, Data.length)]
+  // Data[1]
   // THIS IS AN OBJEST OF UR FOOD, IT HAS category, desc, id, img, title
 
   return (
     <MenuStyle>
-      {
-        newChoicesArrayByType[getRandomDrink(0, newChoicesArrayByType.length)]
-          .title
-      }
+      <h2>
+        {newChoicesArrayByType[getRandomDrink(0, newChoicesArrayByType.length)]}
+      </h2>
     </MenuStyle>
   );
 }

@@ -1,12 +1,12 @@
 import React from "react";
-import choices from "./data";
+import Data from "./data";
 import { MenuStyle } from "./styles/Menu-styled";
 
 function Food() {
   return (
     <>
       <MenuStyle>
-        {choices.map((foodItem) => {
+        {Data.map((foodItem) => {
           const { id, title, img, desc } = foodItem;
           return (
             <div key={id}>

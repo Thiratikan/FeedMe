@@ -1,9 +1,9 @@
 import React from "react";
 
-const Item = ({ choices }) => {
+const Item = ({ Data }) => {
   return (
     <div className="section-center">
-      {choices.map((itemChoice) => {
+      {Data.map((itemChoice) => {
         const { id, title, img, desc } = itemChoice;
         return (
           <article key={id} className="item-choice">
