@@ -9,16 +9,16 @@ function Drink({ itemType }) {
     return Math.floor(Math.random() * (max - min) + min);
   };
 
-  const mapMenu = Data.map((foodItem) => {
-    const { id, title, img, desc } = foodItem;
-    return (
-      <div key={id}>
-        <img src={img} alt={title} />
-        <h1>{title}</h1>
-        <h1>{desc}</h1>
-      </div>
-    );
-  });
+  // const mapMenu = Data.map((foodItem) => {
+  //   const { id, title, img, desc } = foodItem;
+  //   return (
+  //     <div key={id}>
+  //       <img src={img} alt={title} />
+  //       <h1>{title}</h1>
+  //       <h1>{desc}</h1>
+  //     </div>
+  //   );
+  // });
 
   const newChoicesArrayByType = Data.filter(
     (element) => element.category === itemType
@@ -31,7 +31,10 @@ function Drink({ itemType }) {
   return (
     <MenuStyle>
       <h2>
-        {newChoicesArrayByType[getRandomDrink(0, newChoicesArrayByType.length)]}
+        {
+          newChoicesArrayByType[getRandomDrink(0, newChoicesArrayByType.length)]
+            .img
+        }
       </h2>
     </MenuStyle>
   );
