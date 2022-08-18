@@ -9,20 +9,11 @@ function Drink({ itemType }) {
     return Math.floor(Math.random() * (max - min) + min);
   };
 
-  // const mapMenu = Data.map((foodItem) => {
-  //   const { id, title, img, desc } = foodItem;
-  //   return (
-  //     <div key={id}>
-  //       <img src={img} alt={title} />
-  //       <h1>{title}</h1>
-  //       <h1>{desc}</h1>
-  //     </div>
-  //   );
-  // });
-
   const newChoicesArrayByType = Data.filter(
     (element) => element.category === itemType
   );
+
+  const A = getRandomDrink(0, newChoicesArrayByType.length);
 
   // Data[getRandomDrink(0, Data.length)]
   // Data[1]
@@ -30,12 +21,9 @@ function Drink({ itemType }) {
 
   return (
     <MenuStyle>
-      <h2>
-        {
-          newChoicesArrayByType[getRandomDrink(0, newChoicesArrayByType.length)]
-            .img
-        }
-      </h2>
+      <h2>{newChoicesArrayByType[A].title}</h2>
+      <img src={newChoicesArrayByType[A].img} alt="" />
+      <h3>{newChoicesArrayByType[A].desc}</h3>
     </MenuStyle>
   );
 }
