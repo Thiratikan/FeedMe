@@ -5,7 +5,7 @@ export const StyledTitle = styled.div`
 
   img {
     height: 100%;
-    width: ${(props) => (props.width ? props.width : "65%")};
+    width: ${(props) => (props.width ? props.width : "1100px")};
     display: block;
     margin-left: auto;
     margin-right: auto;
