@@ -1,8 +1,8 @@
 import Data from "./Data";
 import { MenuStyle } from "./styles/Menu-styled";
 
-function Drink({ itemType }) {
-  const getRandomDrink = (min, max) => {
+function RandomItem({ itemType }) {
+  const getRandomItem = (min, max) => {
     min = Math.ceil(min);
     max = Math.floor(max);
 
@@ -13,7 +13,7 @@ function Drink({ itemType }) {
     (element) => element.category === itemType
   );
 
-  const A = getRandomDrink(0, newChoicesArrayByType.length);
+  const A = getRandomItem(0, newChoicesArrayByType.length);
 
   // Data[getRandomDrink(0, Data.length)]
   // Data[1]
@@ -21,11 +21,11 @@ function Drink({ itemType }) {
 
   return (
     <MenuStyle>
-      <h2>{newChoicesArrayByType[A].title}</h2>
       <img src={newChoicesArrayByType[A].img} alt="" />
+      <h2>{newChoicesArrayByType[A].title}</h2>
       <h3>{newChoicesArrayByType[A].desc}</h3>
     </MenuStyle>
   );
 }
 
-export default Drink;
+export default RandomItem;

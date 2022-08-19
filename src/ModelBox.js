@@ -1,6 +1,6 @@
 import React from "react";
 import { BoxStyle, OverlayStyle } from "./styles/ModelBox-styled";
-import Drink from "./Drink";
+import Drink from "./RandomItem";
 
 function ModelBox({ open, children, onClose, itemType }) {
   if (!open) return null;

@@ -7,11 +7,11 @@ export const BoxStyle = styled.div`
   border-width: 20px;
   border-color: red;
   width: 1000px;
-  height: 500px;
+  height: 650px;
   transition: fixed;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 150px;
+  margin-top: 100px;
   display: flex;
   flex-direction: column;
   button {
