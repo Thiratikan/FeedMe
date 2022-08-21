@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { StyledFeedTime, Div } from "./styles/Feedtime-styled";
+import { StyledFeedTime, Div, PageCover } from "./styles/Feedtime-styled";
 import { Button } from "./styles/Button-styled";
 import { BtnFeedMe } from "./styles/BTNfeedMe";
 import ModelBox from "./ModelBox";
@@ -12,7 +12,7 @@ function Feedtime() {
   let navigate = useNavigate();
 
   return (
-    <>
+    <PageCover>
       <StyledFeedTime>
         <Div>
           <h1>Choose</h1>
@@ -103,17 +103,7 @@ function Feedtime() {
         itemType={itemType}
         onClose={() => setIsOpen(false)}
       ></ModelBox>
-
-      <section>
-        <nav>
-          <ul>
-            <li>Add Option</li>
-            <li>Restaurants nearby</li>
-            <li>Leave a feedback</li>
-          </ul>
-        </nav>
-      </section>
-    </>
+    </PageCover>
   );
 }
 
