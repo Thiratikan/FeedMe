@@ -4,7 +4,7 @@ const Data = [
     title: "B52",
     category: "drink",
     img: "./images/B52.jpg",
-    desc: "coffee liqueur, Baileys, Grand Marnier",
+    desc: "Coffee liqueur, Baileys, Grand Marnier",
     url: "",
   },
   {
@@ -12,7 +12,7 @@ const Data = [
     title: "Whiskey Sour",
     category: "drink",
     img: "./images/WhiskeySour.webp",
-    desc: "4 whiskey, 4 sweet&sour, 2 syrub, lemon, egg white, orange , cherry",
+    desc: "4 Whiskey, 4 Sweet&Sour, 2 Syrub, Lemon, Egg White, Orange , Cherry",
     url: "",
   },
   {
@@ -20,7 +20,7 @@ const Data = [
     title: "Margarita",
     category: "drink",
     img: "./images/margarita.jpg",
-    desc: "4 tequila, 4 sweet&sour, 2 triple sec, lime",
+    desc: "4 Tequila, 4 Sweet&Sour, 2 Triple sec, Lime",
     url: "",
   },
   {
@@ -28,7 +28,7 @@ const Data = [
     title: "Fried Rice",
     category: "food",
     img: "./images/FriedRice.jpg",
-    desc: "Rice, meat, soy sauce",
+    desc: "Rice, Meat, Soy Sauce",
     url: "",
   },
   {
@@ -52,7 +52,7 @@ const Data = [
     title: "Mojito",
     category: "drink",
     img: "./images/mojito.webp",
-    desc: "4 rum, 2 lime rose, 2 syrup, 2 sourmix, lime, mint",
+    desc: "4 Rum, 2 Lime Rose, 2 Syrup, 2 Sourmix, Lime, Mint",
     url: "",
   },
   {

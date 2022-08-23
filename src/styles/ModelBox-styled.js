@@ -6,8 +6,8 @@ export const BoxStyle = styled.div`
   border-radius: 20px;
   border-width: 20px;
   border-color: red;
-  width: 1000px;
-  height: 650px;
+  width: 850px;
+  height: 620px;
   transition: fixed;
   margin-left: auto;
   margin-right: auto;

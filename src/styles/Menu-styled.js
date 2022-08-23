@@ -5,19 +5,17 @@ export const MenuStyle = styled.div`
   color: white;
   padding: 50px;
   display: grid;
-  grid-template-columns: 0.1fr 2fr 2fr 5fr;
+  grid-template-columns: 300px 450px;
+  grid-gap: 1.25em;
 
   img {
     object-fit: cover;
     height: 420px;
     width: 280px;
-    border-radius: 30px;
+    border-radius: 10px;
     background-color: transparent;
-    margin-top: 25px;
-    grid-column: 1/3;
-    grid-row: 1/3;
-    margin-left: 100px;
     box-shadow: 0 1px 15px 1px;
+    grid-row: 1/8;
   }
   h1 {
     font-size: 13px;
@@ -28,35 +26,19 @@ export const MenuStyle = styled.div`
     background-color: transparent;
     font-family: "Montserrat Alternates", sans-serif;
     font-size: 60px;
-    margin-top: 15px;
-    margin-left: 40px;
     text-align: left;
   }
   h3 {
     background-color: transparent;
     font-family: "Reenie Beanie", cursive;
     font-size: 30px;
-    margin-top: -150px;
-    margin-left: 40px;
     text-align: left;
   }
   h4 {
     background-color: transparent;
   }
-  button a {
-    background-color: transparent;
-    text-decoration: none;
-    cursor: pointer;
-  }
 
   //button
-
-  button {
-    padding: 0;
-    margin: 0;
-    border: none;
-    background: none;
-  }
 
   button {
     --primary-color: white;
@@ -64,15 +46,23 @@ export const MenuStyle = styled.div`
     position: relative;
     display: flex;
     font-weight: 600;
-    font-size: 20px;
     gap: 0.5rem;
     align-items: center;
+    width: 20%;
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: none;
+    font-family: "Patrick Hand SC", cursive;
   }
 
   button a {
+    background-color: transparent;
+    text-decoration: none;
+    cursor: pointer;
     margin: 0;
     position: relative;
-    font-size: 20px;
+    font-size: 25px;
     color: var(--primary-color);
   }
 
@@ -90,7 +80,7 @@ export const MenuStyle = styled.div`
   button a::before {
     position: absolute;
     /*   box-sizing: border-box; */
-    content: "Subscribe";
+    content: "RECIPE";
     width: 0%;
     inset: 0;
     color: var(--hovered-color);
@@ -118,5 +108,9 @@ export const MenuStyle = styled.div`
     width: 15px;
     transition-delay: 0.2s;
     background-color: transparent;
+  }
+
+  // when screen is small
+  @media only screen and (max-width: 1024px) {
   }
 `;
