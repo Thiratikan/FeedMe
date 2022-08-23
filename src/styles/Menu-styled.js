@@ -77,22 +77,11 @@ export const MenuStyle = styled.div`
     transition: 0.3s ease-out;
   }
 
-  button a::before {
-    position: absolute;
-    /*   box-sizing: border-box; */
-    content: "RECIPE";
-    width: 0%;
-    inset: 0;
-    color: var(--hovered-color);
-    overflow: hidden;
-    transition: 0.3s ease-out;
-  }
-
   button:hover::after {
     width: 100%;
   }
 
-  button:hover p::before {
+  button:hover a::before {
     width: 100%;
   }
 
@@ -108,9 +97,35 @@ export const MenuStyle = styled.div`
     width: 15px;
     transition-delay: 0.2s;
     background-color: transparent;
+    font-size: 25px;
   }
 
   // when screen is small
-  @media only screen and (max-width: 1024px) {
+  @media only screen and (max-width: 1005px) {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 0px;
+    img {
+      height: 250px;
+      width: 200px;
+      margin: auto;
+      text-align: center;
+    }
+    h2 {
+      font-size: 25px;
+      background-color: transparent;
+      margin: auto;
+      text-align: center;
+      margin-top: 40px;
+    }
+    h3 {
+      margin-top: 10px;
+      text-align: center;
+    }
+    button a {
+      margin-top: -10px;
+      padding-left: 10%;
+    }
   }
 `;

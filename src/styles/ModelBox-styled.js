@@ -24,6 +24,11 @@ export const BoxStyle = styled.div`
     letter-spacing: 1.5px;
     margin-bottom: 15px;
   }
+  @media only screen and (max-width: 1005px) {
+    margin-top: 35px;
+    width: 90%;
+    height: 550px;
+  }
 `;
 
 export const OverlayStyle = styled.div`

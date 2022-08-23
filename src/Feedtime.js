@@ -91,10 +91,10 @@ function Feedtime() {
             bc="#ffffff"
             color="#ffffff"
             onClick={() => {
-              navigate("/Option");
+              navigate("");
             }}
           >
-            Option
+            Full Menu
           </Button>
         </Div>
       </StyledFeedTime>

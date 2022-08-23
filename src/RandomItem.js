@@ -28,7 +28,13 @@ function RandomItem({ itemType }) {
       <h3>{newChoicesArrayByType[A].desc}</h3>
       {newChoicesArrayByType[A].url && (
         <button>
-          <a href={newChoicesArrayByType[A].url}>Recipe</a>
+          <a
+            href={newChoicesArrayByType[A].url}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Recipe
+          </a>
           <svg
             strokeWidth="4"
             stroke="currentColor"

@@ -24,6 +24,15 @@ export const StyledFeedTime = styled.section`
     font-weight: normal;
     font-size: 80px;
   }
+  @media only screen and (max-width: 1005px) {
+    img {
+      margin-bottom: 30px;
+      height: 450px;
+    }
+    h1 {
+      font-size: 70px;
+    }
+  }
 `;
 export const Div = styled.div`
   text-align: center;

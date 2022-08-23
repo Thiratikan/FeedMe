@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./Home";
 import Feedtime from "./Feedtime";
-import Option from "./Option";
+import FullMenu from "./FullMenu";
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/Home" element={<Home />} />
         <Route path="/feedtime" element={<Feedtime />} />
-        <Route path="/option" element={<Option />} />
+        <Route path="/FullMenu" element={<FullMenu />} />
       </Routes>
     </Router>
   );
