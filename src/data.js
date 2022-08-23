@@ -5,6 +5,7 @@ const Data = [
     category: "drink",
     img: "./images/B52.jpg",
     desc: "coffee liqueur, Baileys, Grand Marnier",
+    url: "",
   },
   {
     id: 2,
@@ -12,6 +13,7 @@ const Data = [
     category: "drink",
     img: "./images/WhiskeySour.webp",
     desc: "4 whiskey, 4 sweet&sour, 2 syrub, lemon, egg white, orange , cherry",
+    url: "",
   },
   {
     id: 3,
@@ -19,6 +21,7 @@ const Data = [
     category: "drink",
     img: "./images/margarita.jpg",
     desc: "4 tequila, 4 sweet&sour, 2 triple sec, lime",
+    url: "",
   },
   {
     id: 4,
@@ -26,6 +29,7 @@ const Data = [
     category: "food",
     img: "./images/FriedRice.jpg",
     desc: "Rice, meat, soy sauce",
+    url: "",
   },
   {
     id: 5,
@@ -33,6 +37,7 @@ const Data = [
     category: "dessert",
     img: "./images/icecream.jpg",
     desc: "Jenny Ice-cream",
+    url: "",
   },
   {
     id: 6,
@@ -40,6 +45,7 @@ const Data = [
     category: "dessert",
     img: "./images/cheesecake.webp",
     desc: "Salt, Cheesecake Factory",
+    url: "",
   },
   {
     id: 7,
@@ -47,6 +53,7 @@ const Data = [
     category: "drink",
     img: "./images/mojito.webp",
     desc: "4 rum, 2 lime rose, 2 syrup, 2 sourmix, lime, mint",
+    url: "",
   },
   {
     id: 8,
@@ -68,6 +75,14 @@ const Data = [
     category: "drink",
     img: "./images/coorslight.png",
     desc: "",
+  },
+  {
+    id: 12,
+    title: "Baked Salmon and Asparagus",
+    category: "food",
+    img: "./images/BakedSalmonwithAs.jpg",
+    desc: "",
+    url: "https://www.instagram.com/p/Cf53fATOV3h/?igshid=YmMyMTA2M2Y=",
   },
 ];
 
