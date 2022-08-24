@@ -10,7 +10,7 @@ function ModelBox({ open, children, onClose, itemType }) {
       <OverlayStyle>
         <BoxStyle>
           <Drink itemType={itemType} />
-          <button>FEED MORE</button>
+          <button>FEED MORE&#10084;</button>
           <button onClick={onClose}>Close</button>
           {children}
         </BoxStyle>

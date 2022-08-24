@@ -85,13 +85,18 @@ function Feedtime() {
               navigate("/Home");
             }}
           >
-            Back
+            &#8592;Back
           </Button>
+
+          <Button bc="#ffffff" color="#ffffff">
+            &#43;Add Item
+          </Button>
+
           <Button
             bc="#ffffff"
             color="#ffffff"
             onClick={() => {
-              navigate("");
+              navigate("/FullMenu");
             }}
           >
             Full Menu

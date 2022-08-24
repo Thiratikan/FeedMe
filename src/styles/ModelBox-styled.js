@@ -27,7 +27,7 @@ export const BoxStyle = styled.div`
   @media only screen and (max-width: 1005px) {
     margin-top: 35px;
     width: 90%;
-    height: 550px;
+    height: 570px;
   }
 `;
 

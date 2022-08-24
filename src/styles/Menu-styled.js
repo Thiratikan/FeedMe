@@ -6,7 +6,6 @@ export const MenuStyle = styled.div`
   padding: 50px;
   display: grid;
   grid-template-columns: 300px 450px;
-  grid-gap: 1.25em;
 
   img {
     object-fit: cover;
@@ -15,7 +14,7 @@ export const MenuStyle = styled.div`
     border-radius: 10px;
     background-color: transparent;
     box-shadow: 0 1px 15px 1px;
-    grid-row: 1/8;
+    grid-row: 1/4;
   }
   h1 {
     font-size: 13px;
@@ -27,12 +26,16 @@ export const MenuStyle = styled.div`
     font-family: "Montserrat Alternates", sans-serif;
     font-size: 60px;
     text-align: left;
+    margin-left: 30px;
+    margin-bottom: 30px;
   }
   h3 {
     background-color: transparent;
     font-family: "Reenie Beanie", cursive;
     font-size: 30px;
     text-align: left;
+
+    margin-left: 30px;
   }
   h4 {
     background-color: transparent;
@@ -54,6 +57,7 @@ export const MenuStyle = styled.div`
     border: none;
     background: none;
     font-family: "Patrick Hand SC", cursive;
+    margin-left: 30px;
   }
 
   button a {
@@ -63,7 +67,7 @@ export const MenuStyle = styled.div`
     margin: 0;
     position: relative;
     font-size: 25px;
-    color: var(--primary-color);
+    color: #c84747;
   }
 
   button::after {
@@ -105,10 +109,10 @@ export const MenuStyle = styled.div`
     padding: 25px;
     display: flex;
     flex-direction: column;
-    grid-gap: 0px;
+
     img {
-      height: 250px;
-      width: 200px;
+      height: 280px;
+      width: 220px;
       margin: auto;
       text-align: center;
     }
@@ -120,12 +124,15 @@ export const MenuStyle = styled.div`
       margin-top: 40px;
     }
     h3 {
-      margin-top: 10px;
       text-align: center;
+      margin-left: 0px;
+      margin-top: 20px;
     }
-    button a {
-      margin-top: -10px;
-      padding-left: 10%;
+    button {
+      margin: auto;
+      text-align: center;
+      margin-bottom: 15px;
+      margin-top: ;
     }
   }
 `;
