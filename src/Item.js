@@ -1,24 +1,23 @@
 import React from "react";
+import { ItemStyle } from "./styles/FullMenu-styled";
 
 const Item = ({ Data }) => {
   return (
-    <div className="section-center">
+    <ItemStyle>
       {Data.map((menuItems) => {
-        const { id, title, img, desc, url } = menuItems;
+        const { title, img, desc, url } = menuItems;
         return (
-          <article key={id} className="item-choice">
+          <section>
             <img src={img} alt={title} className="photo" />
             <div>
-              <header>
-                <h4>{title}</h4>
-              </header>
+              <h4>{title}</h4>
               <p>{desc}</p>
-              {url && <a href={url}>Recipe</a>}
+              {url && <a href={url}>Recipe&#10157;</a>}
             </div>
-          </article>
+          </section>
         );
       })}
-    </div>
+    </ItemStyle>
   );
 };
 

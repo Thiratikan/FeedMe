@@ -1,12 +1,15 @@
 import * as React from "react";
+import { CategoryStyle } from "./styles/FullMenu-styled";
 
 const Categories = ({ filterItems }) => {
   return (
-    <div>
-      <button onClick={() => filterItems("food")}>Food</button>
-      <button onClick={() => filterItems("drink")}>Drink</button>
-      <button onClick={() => filterItems("dessert")}>Dessert</button>
-    </div>
+    <CategoryStyle>
+      <div>
+        <button onClick={() => filterItems("food")}>FOOD</button>
+        <button onClick={() => filterItems("drink")}>DRINK</button>
+        <button onClick={() => filterItems("dessert")}>DESSERT</button>
+      </div>
+    </CategoryStyle>
   );
 };
 

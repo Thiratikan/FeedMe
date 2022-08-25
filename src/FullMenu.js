@@ -3,7 +3,8 @@ import { useNavigate } from "react-router-dom";
 import Categories from "./Categories";
 import Data from "./Data";
 import Item from "./Item";
-import { FullMenuStyle } from "./styles/FullMenu-styled";
+import { FullMenuStyle, ButtonStyle } from "./styles/FullMenu-styled";
+import { Button } from "./styles/Button-styled";
 
 function FullMenu() {
   let navigate = useNavigate();
@@ -16,23 +17,27 @@ function FullMenu() {
     <FullMenuStyle>
       <h1>Menu</h1>
       <Categories filterItems={filterItems} />
-      <Item Data={menuItems} />
-      <div>
-        <button
+      <ButtonStyle>
+        <Button
+          bc="#ffffff"
+          color="#ffffff"
           onClick={() => {
             navigate("/feedtime");
           }}
         >
           &#8592;Back
-        </button>
-        <button
+        </Button>
+        <Button
+          bc="#ffffff"
+          color="#ffffff"
           onClick={() => {
             navigate("/Home");
           }}
         >
           Home Page
-        </button>
-      </div>
+        </Button>
+      </ButtonStyle>
+      <Item Data={menuItems} />
     </FullMenuStyle>
   );
 }
