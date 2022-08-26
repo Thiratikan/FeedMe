@@ -2,6 +2,12 @@ import styled from "styled-components";
 
 export const FullMenuStyle = styled.div`
   color: white;
+  section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
   h1 {
     margin-top: 35px;
     margin-bottom: 0px;
@@ -26,8 +32,6 @@ export const FullMenuStyle = styled.div`
     h1 {
       margin-bottom: 1px;
     }
-    section {
-    }
   }
 `;
 
@@ -38,12 +42,16 @@ export const ButtonStyle = styled.div`
     margin-bottom: 70px;
     font-size: 12px;
   }
+  @media only screen and (max-width: 1005px) {
+    margin-top: 20px;
+  }
 `;
 
 export const ItemStyle = styled.div`
   font-family: "Rajdhani", sans-serif;
   section {
     display: flex;
+
     justify-content: center;
   }
   /* desc */

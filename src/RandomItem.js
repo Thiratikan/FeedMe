@@ -19,8 +19,6 @@ function RandomItem({ itemType }) {
   // Data[1]
   // THIS IS AN OBJEST OF UR FOOD, IT HAS category, desc, id, img, title
 
-  console.log(newChoicesArrayByType[A].url);
-
   return (
     <MenuStyle>
       <img src={newChoicesArrayByType[A].img} alt="" />

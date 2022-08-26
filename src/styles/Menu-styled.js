@@ -52,6 +52,7 @@ export const MenuStyle = styled.div`
     gap: 0.5rem;
     align-items: center;
     width: 20%;
+    height: 50px;
     padding: 0;
     margin: 0;
     border: none;
@@ -68,17 +69,6 @@ export const MenuStyle = styled.div`
     position: relative;
     font-size: 25px;
     color: #c84747;
-  }
-
-  button::after {
-    position: absolute;
-    content: "";
-    width: 0;
-    left: 0;
-    bottom: -7px;
-    background: var(--hovered-color);
-    height: 2px;
-    transition: 0.3s ease-out;
   }
 
   button:hover::after {

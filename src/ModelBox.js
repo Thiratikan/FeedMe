@@ -1,6 +1,6 @@
 import React from "react";
 import { BoxStyle, OverlayStyle } from "./styles/ModelBox-styled";
-import Drink from "./RandomItem";
+import RandomItem from "./RandomItem";
 
 function ModelBox({ open, children, onClose, itemType }) {
   if (!open) return null;
@@ -9,8 +9,8 @@ function ModelBox({ open, children, onClose, itemType }) {
     <>
       <OverlayStyle>
         <BoxStyle>
-          <Drink itemType={itemType} />
-          <button>FEED MORE&#10084;</button>
+          <RandomItem itemType={itemType} />
+          <button onClick={RandomItem}>FEED MORE&#10084;</button>
           <button onClick={onClose}>Close</button>
           {children}
         </BoxStyle>
