@@ -1,16 +1,16 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Categories from "./Categories";
-import Data from "./Data";
+import Items from "./Data";
 import Item from "./Item";
 import { FullMenuStyle, ButtonStyle } from "./styles/FullMenu-styled";
 import { Button } from "./styles/Button-styled";
 
 function FullMenu() {
   let navigate = useNavigate();
-  const [menuItems, setMenuItems] = useState(Data);
+  const [menuItems, setMenuItems] = useState(Items);
   const filterItems = (category) => {
-    const newItem = Data.filter((items) => items.category === category);
+    const newItem = Items.data.filter((items) => items.category === category);
     setMenuItems(newItem);
   };
   return (
