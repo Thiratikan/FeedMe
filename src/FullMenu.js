@@ -8,7 +8,7 @@ import { Button } from "./styles/Button-styled";
 
 function FullMenu() {
   let navigate = useNavigate();
-  const [menuItems, setMenuItems] = useState(Items.data);
+  const [menuItems, setMenuItems] = useState(Items);
   const filterItems = (category) => {
     const newItem = Items.data.filter((items) => items.category === category);
     setMenuItems(newItem);
