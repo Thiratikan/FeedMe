@@ -1,4 +1,4 @@
-import Data from "./Data";
+import Items from "./Data";
 import { MenuStyle } from "./styles/Menu-styled";
 
 function RandomItem({ itemType }) {
@@ -9,7 +9,7 @@ function RandomItem({ itemType }) {
     return Math.floor(Math.random() * (max - min) + min);
   };
 
-  const newChoicesArrayByType = Data.filter(
+  const newChoicesArrayByType = Items.data.filter(
     (element) => element.category === itemType
   );
 

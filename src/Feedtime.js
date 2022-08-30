@@ -106,8 +106,10 @@ function Feedtime() {
       <ModelBox
         open={isOpen}
         itemType={itemType}
-        onClose={() => setIsOpen(false)}
-      ></ModelBox>
+        onClose={() => {
+          setIsOpen(false);
+        }}
+      />
     </PageCover>
   );
 }
