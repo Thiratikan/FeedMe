@@ -5,7 +5,7 @@ export const StyledTitle = styled.div`
 
   img {
     height: 100%;
-    width: ${(props) => (props.width ? props.width : "1100px")};
+    width: 75%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -40,4 +40,14 @@ export const StyledTitle = styled.div`
     height: 100px;
     padding: 22px;
   }
+
+  @media only screen and (max-width: 1005px) {
+    img {
+      width: 85%;
+    }
+    h1 {
+      margin-top: 30px;
+      text-align: center;
+    }
+  
 `;

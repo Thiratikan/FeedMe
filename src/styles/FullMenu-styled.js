@@ -32,6 +32,12 @@ export const FullMenuStyle = styled.div`
     h1 {
       margin-bottom: 1px;
     }
+    p {
+      margin-bottom: 20px;
+    }
+    h5 {
+      margin-bottom: 30px;
+    }
   }
 `;
 
@@ -43,7 +49,7 @@ export const ButtonStyle = styled.div`
     font-size: 12px;
   }
   @media only screen and (max-width: 1005px) {
-    margin-top: 20px;
+    margin-top: 40px;
   }
 `;
 
