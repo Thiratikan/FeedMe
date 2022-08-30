@@ -2,7 +2,7 @@ import React from "react";
 import { BoxStyle, OverlayStyle } from "./styles/ModelBox-styled";
 import RandomItem from "./RandomItem";
 
-function ModelBox({ open, children, onClose, itemType }) {
+function ModelBox({ open, onClose, itemType }) {
   if (!open) return null;
 
   return (
@@ -10,9 +10,8 @@ function ModelBox({ open, children, onClose, itemType }) {
       <OverlayStyle>
         <BoxStyle>
           <RandomItem itemType={itemType} />
-          <button onClick={RandomItem}>FEED MORE&#10084;</button>
+          {/* <button onClick={RandomItem}>FEED MORE&</button> */}
           <button onClick={onClose}>Close</button>
-          {children}
         </BoxStyle>
       </OverlayStyle>
     </>

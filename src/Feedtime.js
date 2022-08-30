@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { StyledFeedTime, Div, PageCover } from "./styles/Feedtime-styled";
+import { StyledFeedTime, Div } from "./styles/Feedtime-styled";
 import { Button } from "./styles/Button-styled";
 import { BtnFeedMe } from "./styles/BTNfeedMe";
 import ModelBox from "./ModelBox";
+import AddItemModelbox from "./AddItemModelbox";
 
 function Feedtime() {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,7 +13,7 @@ function Feedtime() {
   let navigate = useNavigate();
 
   return (
-    <PageCover>
+    <>
       <StyledFeedTime>
         <Div>
           <h1>Choose</h1>
@@ -88,7 +89,7 @@ function Feedtime() {
             &#8592;Back
           </Button>
 
-          <Button bc="#ffffff" color="#ffffff">
+          <Button bc="#ffffff" color="#ffffff" onClick={() => setIsOpen(true)}>
             &#43;Add Item
           </Button>
 
@@ -110,7 +111,14 @@ function Feedtime() {
           setIsOpen(false);
         }}
       />
-    </PageCover>
+
+      <AddItemModelbox
+        open={isOpen}
+        onClose={() => {
+          setIsOpen(false);
+        }}
+      />
+    </>
   );
 }
 
