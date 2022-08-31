@@ -10,6 +10,12 @@ function Feedtime() {
   const [isOpen, setIsOpen] = useState(false);
   const [itemType, setItemType] = useState("");
 
+  const [isOpenAddItem, setIsOpenAddItem] = useState(false);
+
+  const closeModel = () => {
+    setIsOpenAddItem(false);
+  };
+
   let navigate = useNavigate();
 
   return (
@@ -89,7 +95,13 @@ function Feedtime() {
             &#8592;Back
           </Button>
 
-          <Button bc="#ffffff" color="#ffffff" onClick={() => setIsOpen(true)}>
+          <Button
+            bc="#ffffff"
+            color="#ffffff"
+            onClick={() => {
+              setIsOpenAddItem(true);
+            }}
+          >
             &#43;Add Item
           </Button>
 
@@ -112,12 +124,7 @@ function Feedtime() {
         }}
       />
 
-      <AddItemModelbox
-        open={isOpen}
-        onClose={() => {
-          setIsOpen(false);
-        }}
-      />
+      <AddItemModelbox isOpen={isOpenAddItem} isClose={closeModel} />
     </>
   );
 }
