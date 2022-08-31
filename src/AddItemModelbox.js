@@ -1,5 +1,10 @@
 import React from "react";
-import { BoxStyle, Div, ButtonSection } from "./styles/AddItemModelbox-styled";
+import {
+  BoxStyle,
+  Div,
+  ButtonSection,
+  Info,
+} from "./styles/AddItemModelbox-styled";
 import { OverlayStyle } from "./styles/ModelBox-styled";
 
 // use {} to destructor props object
@@ -15,29 +20,40 @@ function AddItemModelbox({ isOpen, isClose }) {
     <OverlayStyle>
       <BoxStyle>
         <button onClick={isClose}>X</button>
-
-        <Div>
-          <label>Title:</label>
-          <input type="text" id="title" name="title" />
-        </Div>
-        <Div>
-          <label>Category:</label>
-          <select id="category">
-            <option>Drink</option>
-            <option>Food</option>
-            <option>Dessert</option>
-          </select>
-        </Div>
-        <Div>
-          <label>Image:</label>
-        </Div>
-        <Div>
-          <label>Description:</label>
-          <input type="text" id="desc" name="desc" />
-        </Div>
-        <Div>
-          <label>Link for Recipe:</label>
-        </Div>
+        <h1>ADD ITEM</h1>
+        <Info>
+          <Div>
+            <input
+              type="text"
+              placeholder="Enter Title..."
+              id="title"
+              name="title"
+            />
+          </Div>
+          <Div>
+            <input
+              type="text"
+              placeholder="Enter Description..."
+              id="desc"
+              name="desc"
+            />
+          </Div>
+          <Div>
+            <input type="url" placeholder="Enter URL..." id="url" name="link" />
+          </Div>
+          <Div>
+            <label>Category:</label>
+            <select id="category">
+              <option>Drink</option>
+              <option>Food</option>
+              <option>Dessert</option>
+            </select>
+          </Div>
+          <Div>
+            <label>Image:</label>
+            <input type="file" id="file" accept="image" />
+          </Div>
+        </Info>
 
         <ButtonSection>
           <button>Save</button>

@@ -6,15 +6,17 @@ export const BoxStyle = styled.div`
   color: white;
   background: rgba(0, 0, 0, 0.9);
   border-radius: 20px;
-  width: 350px;
-  height: 400px;
+  width: 450px;
+  height: 500px;
   transition: fixed;
   margin-left: auto;
   margin-right: auto;
-  header {
-    margin: 0;
+  h1 {
+    font-family: "Monoton", cursive;
     background-color: transparent;
-    text-align: right;
+    text-align: center;
+    margin-bottom: 20px;
+    letter-spacing: 5px;
   }
   body {
     text-align: left;
@@ -29,7 +31,7 @@ export const BoxStyle = styled.div`
     background-color: transparent;
     border-color: transparent;
     cursor: pointer;
-    letter-spacing: 1.5px;
+    letter-spacing: 1px;
   }
   div {
     background-color: transparent;
@@ -45,6 +47,12 @@ export const BoxStyle = styled.div`
   input {
     color: black;
     background-color: white;
+    cursor: pointer;
+    width: 80%;
+    height: 50px;
+    outline: transparent;
+    text-align: center;
+    border-radius: 30px;
   }
 `;
 
@@ -61,6 +69,9 @@ export const Div = styled.div`
 
 export const ButtonSection = styled.div`
   margin-top: 20px;
-  button {
-  }
+  text-align: center;
+`;
+
+export const Info = styled.div`
+  margin-left: 10%;
 `;
