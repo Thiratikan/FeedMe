@@ -1,9 +1,9 @@
 import React from "react";
-import { ItemStyle } from "./styles/FullMenu-styled";
+import { ItemStyle, ItemsContainer } from "./styles/FullMenu-styled";
 
 const Item = ({ Data }) => {
   return (
-    <>
+    <ItemsContainer>
       {Data.map((menuItems) => {
         const { title, img, desc, url } = menuItems;
         return (
@@ -19,7 +19,7 @@ const Item = ({ Data }) => {
           </ItemStyle>
         );
       })}
-    </>
+    </ItemsContainer>
   );
 };
 

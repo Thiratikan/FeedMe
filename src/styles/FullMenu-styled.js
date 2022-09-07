@@ -53,7 +53,15 @@ export const ButtonStyle = styled.div`
   }
 `;
 
+export const ItemsContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  margin: auto;
+`;
+
 export const ItemStyle = styled.div`
+  flex: 50%;
   font-family: "Rajdhani", sans-serif;
   section {
     display: flex;
