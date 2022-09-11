@@ -27,6 +27,9 @@ export const FullMenuStyle = styled.div`
   button {
     margin-bottom: 30px;
   }
+  div {
+    width: auto;
+  }
 
   @media only screen and (max-width: 1005px) {
     h1 {
@@ -61,13 +64,12 @@ export const ItemsContainer = styled.div`
 `;
 
 export const ItemStyle = styled.div`
-  flex: 50%;
+  flex: 30%;
   font-family: "Rajdhani", sans-serif;
-  section {
-    display: flex;
-
-    justify-content: center;
+  div {
+    margin-left: 30px;
   }
+
   /* desc */
   p {
     width: 300px;
@@ -81,14 +83,16 @@ export const ItemStyle = styled.div`
     width: 220px;
   }
   img {
-    margin-right: 20px;
-    margin-bottom: 30px;
   }
   /* link */
   a {
     text-decoration: none;
     color: #c84747;
     font-size: 18px;
+  }
+
+  section {
+    margin-bottom: 20px;
   }
   @media only screen and (max-width: 1005px) {
     img {
