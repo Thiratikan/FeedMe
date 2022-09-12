@@ -5,7 +5,7 @@ function Home() {
   let navigate = useNavigate();
   return (
     <StyledTitle>
-      <div className="title">
+      <div>
         <img src="./images/FeedMe.png" alt="feedme" />
         <h1>Pick the meal & Enjoy your food</h1>
       </div>

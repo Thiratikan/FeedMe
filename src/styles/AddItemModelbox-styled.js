@@ -45,6 +45,9 @@ export const BoxStyle = styled.div`
     background-color: white;
     width: 75px;
   }
+  form {
+    background-color: transparent;
+  }
 `;
 
 export const Div = styled.div`
