@@ -4,6 +4,8 @@ import {
   Div,
   ButtonSection,
   Info,
+  BottomEdit,
+  TopEdit,
 } from "./styles/AddItemModelbox-styled";
 import { OverlayStyle } from "./styles/ModelBox-styled";
 
@@ -22,37 +24,47 @@ function AddItemModelbox({ isOpen, isClose }) {
         <button onClick={isClose}>X</button>
         <h1>ADD ITEM</h1>
         <Info>
-          <Div>
-            <input
-              type="text"
-              placeholder="Enter Title..."
-              id="title"
-              name="title"
-            />
-          </Div>
-          <Div>
-            <input
-              type="text"
-              placeholder="Enter Description..."
-              id="desc"
-              name="desc"
-            />
-          </Div>
-          <Div>
-            <input type="url" placeholder="Enter URL..." id="url" name="link" />
-          </Div>
-          <Div>
-            <label>Category:</label>
-            <select id="category">
-              <option>Drink</option>
-              <option>Food</option>
-              <option>Dessert</option>
-            </select>
-          </Div>
-          <Div>
-            <label>Image:</label>
-            <input type="file" id="file" accept="image" />
-          </Div>
+          <TopEdit>
+            <Div>
+              <input
+                type="text"
+                placeholder="Enter Title..."
+                id="title"
+                name="title"
+              />
+            </Div>
+            <Div>
+              <input
+                type="text"
+                placeholder="Enter Description..."
+                id="desc"
+                name="desc"
+              />
+            </Div>
+            <Div>
+              <input
+                type="url"
+                placeholder="Enter URL..."
+                id="url"
+                name="link"
+              />
+            </Div>
+          </TopEdit>
+
+          <BottomEdit>
+            <Div>
+              <label>Category: </label>
+              <select id="category">
+                <option>Drink</option>
+                <option>Food</option>
+                <option>Dessert</option>
+              </select>
+            </Div>
+            <Div>
+              <label>Image: </label>
+              <input type="file" id="file" accept="image" />
+            </Div>
+          </BottomEdit>
         </Info>
 
         <ButtonSection>
