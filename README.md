@@ -1,3 +1,3 @@
 <p align="center">
-  <img src="/public/images/FeedMe.png" title="hover text">
+  <img src="/public/images/feedme.JPG" title="hover text">
 </p>
