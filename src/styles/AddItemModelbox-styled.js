@@ -91,4 +91,7 @@ export const BottomEdit = styled.div`
     background-color: transparent;
     text-align: center;
   }
+  option {
+    background-color: white;
+  }
 `;
